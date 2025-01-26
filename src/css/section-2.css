@@ -1,0 +1,51 @@
+.section-2 {
+    position: relative;
+    background: radial-gradient(circle closest-corner at 80% 50%, rgba(115, 154, 207, .7) 20%, rgba(21, 32, 51, 1) 150%),
+        url('../images/section-2-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-position: right;
+}
+
+
+@media (max-width: 1080px) {
+    .section-2 .content-holder {
+        flex-direction: column;
+    }
+
+    .section-2 .content-holder p {
+        width: 100% !important;
+        padding: 3rem 0;
+    }
+
+    .section-2 .content-holder .cards {
+        width: 100% !important;
+    }
+
+    .section-2 .content-holder .cards span {
+        margin-top: 2rem !important;
+    }
+
+    .section-2 .content-holder .cards p {
+        width: 100% !important;
+        text-align: center;
+        padding: 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .section-2 {
+        height: fit-content !important;
+    }
+
+    .section-2 .content-holder .cards-holder {
+        flex-direction: column !important;
+    }
+
+    .cards-holder>div {
+        padding-top: 1rem !important;
+    }
+
+}
