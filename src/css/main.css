@@ -72,7 +72,8 @@ main::-webkit-scrollbar {
 }
 
 section {
-    padding-top: 10rem;
+    position: relative;
+    padding-top: 6rem;
     height: 100vh;
     scroll-snap-align: start;
     animation: appear linear;

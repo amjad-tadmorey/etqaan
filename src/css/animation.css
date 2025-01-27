@@ -11,7 +11,7 @@
     background-color: transparent;
     transition: width 0.3s ease;
     border-right: 3px solid rgb(17, 101, 255);
-    animation: moveline 4s forwards;
+    animation: moveline 4s ease forwards;
 }
 
 .reveal span {
@@ -24,7 +24,7 @@
     background-color: rgba(21, 32, 51, 1);
     transition: width 0.3s ease;
     transform-origin: left;
-    animation: revealText 2s forwards;
+    animation: revealText 2s ease forwards;
     animation-delay: 2s;
 }
 
@@ -103,6 +103,25 @@
     transform-origin: 100% 100%;
     animation: godownbox 1s forwards;
     animation-delay: 1.7s;
+}
+
+.go-down .content {
+    animation: goupcontent 1s forwards;
+    animation-delay: 2s;
+}
+
+
+
+@keyframes goupcontent {
+    from {
+        transform: translateY(35%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
 }
 
 @keyframes godown {

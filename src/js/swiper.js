@@ -35,7 +35,7 @@ const swiper = new Swiper('.swiper-container', {
 });
 const swiper2 = new Swiper('.swiper-container-2', {
     centeredSlides: true,
-    slidesPerView: 'auto', // Always show 3 slides
+    slidesPerView: 5, // Always show 3 slides
     loop: true, // Enables infinite looping
     spaceBetween: 30, // Space between slides
 
@@ -43,9 +43,9 @@ const swiper2 = new Swiper('.swiper-container-2', {
         nextEl: '.swiper-button-next-2',
         prevEl: '.swiper-button-prev-2',
     },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
     speed: 3000,
 });
