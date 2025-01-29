@@ -35,17 +35,17 @@ const swiper = new Swiper('.swiper-container', {
 });
 const swiper2 = new Swiper('.swiper-container-2', {
     centeredSlides: true,
-    slidesPerView: 5, // Always show 3 slides
+    slidesPerView: 'auto', // Always show 3 slides
     loop: true, // Enables infinite looping
     spaceBetween: 30, // Space between slides
 
     navigation: {
-        nextEl: '.swiper-button-next-2',
-        prevEl: '.swiper-button-prev-2',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
-    speed: 3000,
+    autoplay: {
+        delay: 0,           // No delay, starts immediately
+        disableOnInteraction: false, // Keep autoplay running even on interaction
+    },
+    speed: 8000,
 });

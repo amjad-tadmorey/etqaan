@@ -16,39 +16,64 @@ closeBtn.addEventListener('click', () => {
     links.classList.remove('opened')
 })
 
-
-// Create an intersection observer
-const observer = new IntersectionObserver((entries, observer) => {
-    // Loop through all observed entries (in case there are multiple)
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        // If the target section is in the viewport (intersecting)
-        if (entry.isIntersecting) {
-            const sectionId = entry.target.id; // Get the ID of the section in view
+        const sectionId = entry.target.id;
 
-            // Perform actions based on the section ID
+        if (entry.isIntersecting) {
+            // Section enters the viewport
+            console.log(`Entered: ${sectionId}`);
+
             if (sectionId === 'section-1') {
-                animationTarget1.classList.add('reveal')
-                // Add additional actions for section 1
+                document.querySelector('#animation-target-1').classList.add('reveal');
             } else if (sectionId === 'section-2') {
-                animationTarget2.classList.add('reveal')
                 card1.classList.add('go-down')
                 card2.classList.add('go-down')
                 card3.classList.add('go-down')
-                // Add additional actions for section 2
+                document.querySelector('#animation-target-2').classList.add('reveal');
+                document.querySelectorAll('.card').forEach(card => card.classList.add('go-down'));
             } else if (sectionId === 'section-3') {
                 console.log('You have reached Section 3');
-                // Add additional actions for section 3
             }
+        } else {
+            // Section exits the viewport
+            console.log(`Exited: ${sectionId}`);
 
-            // Optionally stop observing once the section is reached (if only the first view matters)
-            observer.unobserve(entry.target);
+            if (sectionId === 'section-1') {
+                document.querySelector('#animation-target-1').classList.remove('reveal');
+            } else if (sectionId === 'section-2') {
+                card1.classList.remove('go-down')
+                card2.classList.remove('go-down')
+                card3.classList.remove('go-down')
+                document.querySelector('#animation-target-2').classList.remove('reveal');
+                document.querySelectorAll('.card').forEach(card => card.classList.remove('go-down'));
+            } else if (sectionId === 'section-3') {
+                console.log('Left Section 3');
+            }
         }
     });
 }, {
-    threshold: 0.5, // Trigger when 50% of the element is visible
+    threshold: 0.5 // Triggers when 50% of the section is visible
 });
 
-// Observe multiple sections by their IDs
-observer.observe(document.getElementById('section-1'));
-observer.observe(document.getElementById('section-2'));
-observer.observe(document.getElementById('section-3'));
+// Observe all sections dynamically
+document.querySelectorAll('section').forEach(section => observer.observe(section));
+
+const footer = document.querySelector('.section-4');
+const contact = document.querySelector('.contact')
+
+const observer_footer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            console.log('Footer is visible on screen');
+            contact.classList.add('hide-contact')
+        } else {
+            console.log('Footer is NOT visible on screen');
+            contact.classList.remove('hide-contact')
+        }
+    });
+}, {
+    threshold: 0.01 // Detects even 1% of the footer
+});
+
+observer_footer.observe(footer);

@@ -29,7 +29,7 @@
         <ul id="links" class="closed">
             <img id="close-btn" src="./src/images/close.svg" />
             <li><a href="#section-2">حول إتقان</a></li>
-            <li><a href="#">مشاريعنا</a></li>
+            <li><a href="#section-3">مشاريعنا</a></li>
             <li><a href="#">خدماتنا</a></li>
             <li><a href="#">شركاؤنا</a></li>
             <li><a href="#">اتصل بنا</a></li>
@@ -37,17 +37,17 @@
         <img src="./src/images/logo.png" alt="" class="logo">
     </header>
     <main class="">
-        <div
-            style="position: fixed; bottom: 0; left: 0; padding: 0rem 0rem 0rem 5rem; z-index: 1111; color: #34acf9; background-color: white; display: flex; align-items: center; flex-direction: row-reverse; gap: 2rem; border-radius: 0rem 2rem 2rem 0rem;">
+        <div class="hide-contact contact"
+            style="transition: .5s ease; position: fixed; bottom: 0; left: 0; padding: 0rem 0rem 0rem 5rem; z-index: 1111; color: #4498b2; background-color: white; display: flex; align-items: center; flex-direction: row-reverse; gap: 2rem; border-radius: 0rem 2rem 2rem 0rem;">
             <div style="display: flex; flex-direction: column; font-size: 1.2rem;">
                 <p>لديك إستفسار</p>
                 <p>لا تتردد بالتواصل معنا</p>
             </div>
             <i class="fa-solid fa-headphones"
-                style="font-size: 3rem; color: white; background-color: #34acf9; padding: .5rem; border-radius: .5rem;"></i>
+                style="font-size: 3rem; color: white; background-color: #4498b2; padding: .5rem; border-radius: .5rem;"></i>
         </div>
         <div
-            style="position: fixed; top: 20%; padding: 1rem 2rem 1rem 1rem; z-index: 1111; font-size: 2rem; color: white; background-color: #34acf9; border-radius: 2rem 0rem 0rem 2rem;">
+            style="position: fixed; top: 20%; padding: 1rem 2rem 1rem 1rem; z-index: 1111; font-size: 2rem; color: white; background-color: #4498b2; border-radius: 2rem 0rem 0rem 2rem;">
             <i class="fa-brands fa-whatsapp"></i>
         </div>
         <div
@@ -66,7 +66,7 @@
                     بفريق عمل متكامل و ملتزم بنجاخ
                     العملاء, و تطوير أصول الشركة محلياو خارجيا من خلال مشاريعها العملاقة</p>
                 <div class="" style="display: flex; flex-direction: column; align-items: end; gap: 2rem;">
-                    <div><img src="./src/images/section-1-img.png" alt="" style="width: 30rem; border-radius: 2rem;">
+                    <div><img class="img-1" src="./src/images/section-1-img.png" alt="" style="width: 30rem; border-radius: 2rem;">
                     </div>
                     <div id="animation-target-1" style="padding-left: 3rem;" class="">
                         <span></span>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <a href="#section-2"><i class="fa-solid fa-angle-down"
-                    style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); padding: 1rem; font-size: 3rem; color: #34acf9; cursor: pointer; z-index: 111111;"></i></a>
+                    style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); padding: 1rem; font-size: 3rem; color: #4498b2; cursor: pointer; z-index: 111111;"></i></a>
         </section>
         <section id="section-2" class="section-2 container">
             <!-- <div class="over-lay-1"></div> -->
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <a href="#section-3"><i class="fa-solid fa-angle-down"
-                    style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); padding: 1rem; font-size: 3rem; color: #34acf9; cursor: pointer; z-index: 111111;"></i></a>
+                    style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); padding: 1rem; font-size: 3rem; color: #4498b2; cursor: pointer; z-index: 111111;"></i></a>
         </section>
         <section id="section-3" class="section-3 container">
             <h1 style="color: white; font-size: 1.2rem; margin-right: 3rem; margin-bottom: 3rem;">شركاؤنا</h1>
@@ -163,8 +163,8 @@
             </div>
             <div style="padding-top: 6rem;">
                 <h1 style="color: white; font-size: 1.2rem; margin-right: 3rem; margin-bottom: 3rem;">شركاؤنا</h1>
-                <div class="swiper-holder" style="border-top: 1px solid white; padding: 0 12rem;">
-                    <div class="swiper-container-2">
+                <div class="swiper-holder" style="border-top: 1px solid white; padding: 0 6rem; position: relative;">
+                    <div class="swiper-container-2" style="overflow: hidden !important;">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide-2 swiper-slide"><img src="./src/images/partner2-awqaf.svg" alt=""
                                     style="width: 50%;"></div>
@@ -188,16 +188,16 @@
                                     style="width: 50%;"></div>
                         </div>
 
-                        <div class="swiper-button-prev-2"></div>
-                        <div class="swiper-button-next-2"></div>
 
                     </div>
+                    <div class="swiper-button-prev" style="z-index: 1111111111;"></div>
+                    <div class="swiper-button-next" style="z-index: 1111111111;"></div>
                 </div>
             </div>
         </section>
-        <section class="footer"
-            style="color: gray;gap: 4rem; display: flex; align-items: start; justify-content: space-between; height: fit-content !important; padding-top: 2rem; padding: 2rem 2rem 2rem 2rem; position: relative; z-index: 1111111111111111111;">
-            <img src="./src/images/logo.png" alt="" class="logo">
+        <section class="footer section-4"
+            style="color: gray; gap: 1rem; display: flex; align-items: start; justify-content: space-between; height: fit-content !important; padding: 2rem 0rem; position: relative; z-index: 1111111111111111111; margin: 0 10rem;">
+            <img src="./src/images/footer-logo.svg" alt="" class="logo">
             <div style="width: 18rem;" class="second-sec">
                 <h2>حول إتقان</h2>
                 <p>إتقان العقارية شركة عالمية، مبتكرة في رسم خطط
@@ -209,11 +209,10 @@
             <div>
                 <h2>روابط مفيدة</h2>
                 <ul style="display: flex; flex-direction: column; gap: .5rem; font-size: .4rem; align-items: start;">
-                    <li><a style="font-size: .8rem; color: gray;" href="#">حول إتقان</a></li>
+                    <li><a style="font-size: .8rem; color: gray;" href="#">الصفحة الرئيسية</a></li>
                     <li><a style="font-size: .8rem; color: gray;" href="#">مشاريعنا</a></li>
                     <li><a style="font-size: .8rem; color: gray;" href="#">خدماتنا</a></li>
-                    <li><a style="font-size: .8rem; color: gray;" href="#">شركاؤنا</a></li>
-                    <li><a style="font-size: .8rem; color: gray;" href="#">اتصل بنا</a></li>
+                    <li><a style="font-size: .8rem; color: gray;" href="#">المركز الاجتماع</a></li>
                 </ul>
             </div>
             <div>
@@ -224,7 +223,7 @@
                 </span>
                 <div>
                     <a href="mailto:info@etqaan.sa"></a>
-                    <div style="color: #34acf9; display: flex; align-items: center; gap: 4rem; margin-top: 1rem;">
+                    <div style="color: #4498b2; display: flex; align-items: center; gap: 4rem; margin-top: 1rem;">
                         <span style="font-weight: bold;">920001019</span>
                         <div style="display: flex; align-items: center; gap: 1rem;">
                             <i class="fa-brands fa-x-twitter"></i>

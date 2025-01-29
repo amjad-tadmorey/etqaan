@@ -47,5 +47,8 @@
     .cards-holder>div {
         padding-top: 1rem !important;
     }
+    .cards-holder>div {
+        max-width: 100% !important;
+    }
 
 }

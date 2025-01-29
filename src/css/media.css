@@ -8,6 +8,7 @@
 
     .footer {
         padding: 1rem 2rem !important;
+
     }
 
     .footer ul {
@@ -54,6 +55,7 @@
     .footer {
         flex-direction: column;
         padding: 4rem 8rem !important;
+        margin: 0 !important;
     }
 
     .footer ul {
@@ -222,4 +224,10 @@
         width: 100% !important;
     }
 
+}
+
+@media (max-width: 850px) {
+    .img-1 {
+        width: 45rem !important;
+    }
 }

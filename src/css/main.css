@@ -1,28 +1,3 @@
-/* @font-face {
-    font-family: 'ReadexPro-Light';
-    src: url('/src/fonts/ReadexPro-Light.ttf');
-}
-
-@font-face {
-    font-family: 'ReadexPro-Regular';
-    src: url('/src/fonts/ReadexPro-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'ReadexPro-Medium';
-    src: url('/src/fonts/ReadexPro-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'ReadexPro-SemiBold';
-    src: url('/src/fonts/ReadexPro-SemiBold.ttf');
-}
-
-@font-face {
-    font-family: 'ReadexPro-Bold';
-    src: url('/src/fonts/ReadexPro-Bold.ttf');
-} */
-
 @font-face {
     font-family: 'ReadexPro';
     src:
@@ -44,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -89,4 +65,8 @@ section {
 .footer h2 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
+}
+
+.hide-contact {
+    left: -100% !important;
 }
