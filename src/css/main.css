@@ -49,14 +49,13 @@ main::-webkit-scrollbar {
 
 section {
     position: relative;
-    padding-top: 6rem;
+    padding-top: 12rem;
     height: 100vh;
     scroll-snap-align: start;
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0;
 }
-
 
 .logo {
     width: 7rem;
