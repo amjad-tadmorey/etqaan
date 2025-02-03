@@ -43,9 +43,9 @@ const swiper2 = new Swiper('.swiper-container-2', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    autoplay: {
-        delay: 0,           // No delay, starts immediately
-        disableOnInteraction: false, // Keep autoplay running even on interaction
-    },
-    speed: 8000,
+    // autoplay: {
+    //     delay: 0,           // No delay, starts immediately
+    //     // disableOnInteraction: false, // Keep autoplay running even on interaction
+    // },
+    speed: 1000,
 });
