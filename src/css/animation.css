@@ -71,6 +71,22 @@
     animation-delay: .5s !important;
 }
 
+.card-1.go-down::after {
+    animation-delay: 2.5s;
+}
+
+.card-2.go-down::after {
+    animation-delay: 2s;
+}
+
+.card-1.go-down img {
+    animation-delay: 2.5s;
+}
+
+.card-2.go-down img {
+    animation-delay: 2s;
+}
+
 .cards-holder>div {
     transform: translateY(-100%);
     opacity: 0;

@@ -38,7 +38,8 @@ const observer = new IntersectionObserver((entries) => {
         } else {
             // Section exits the viewport
             console.log(`Exited: ${sectionId}`);
-
+            console.log('Footer is NOT visible on screen');
+            contact.classList.remove('hide-contact');
             if (sectionId === 'section-1') {
                 document.querySelector('#animation-target-1').classList.remove('reveal');
             } else if (sectionId === 'section-2') {
@@ -60,20 +61,20 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('section').forEach(section => observer.observe(section));
 
 const footer = document.querySelector('.section-4');
-const contact = document.querySelector('.contact')
+const contact = document.querySelector('.contact');
 
-const observer_footer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
-            console.log('Footer is visible on screen');
-            contact.classList.add('hide-contact')
-        } else {
-            console.log('Footer is NOT visible on screen');
-            contact.classList.remove('hide-contact')
-        }
-    });
-}, {
-    threshold: 0.01 // Detects even 1% of the footer
-});
+if (footer && contact) {
+    const observer_footer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+                console.log('Footer is visible on screen');
+                contact.classList.add('hide-contact');
+            } else {
+                console.log('Footer is NOT visible on screen');
+                contact.classList.remove('hide-contact');
+            }
+        });
+    }, { threshold: 0.01 });
 
-observer_footer.observe(footer);
+    observer_footer.observe(footer);
+}
