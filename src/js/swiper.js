@@ -40,12 +40,12 @@ const swiper2 = new Swiper('.swiper-container-2', {
     spaceBetween: 30, // Space between slides
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next-2',
+        prevEl: '.swiper-button-prev-2',
     },
-    // autoplay: {
-    //     delay: 0,           // No delay, starts immediately
-    //     // disableOnInteraction: false, // Keep autoplay running even on interaction
-    // },
-    speed: 1000,
+    autoplay: {
+        delay: 0,           // No delay, starts immediately
+        // disableOnInteraction: false, // Keep autoplay running even on interaction
+    },
+    speed: 8000,
 });
