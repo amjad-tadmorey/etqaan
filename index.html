@@ -19,21 +19,23 @@
 
 <body dir="rtl">
     <header class="conteiner">
-        <div style="display: flex; align-items: center; gap: 2rem;">
-            <img id="open-btn" src="./src/images/menu.svg" alt="">
-            <div class="search">
-                <input type="search" name="" id="">
-                <img src="./src/images/search.svg" alt="">
+        <div style="display: flex; align-items: center; gap: 4rem;">
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <img id="open-btn" src="./src/images/menu.svg" alt="">
+                <div class="search">
+                    <input type="search" name="" id="">
+                    <img src="./src/images/search.svg" alt="">
+                </div>
             </div>
+            <ul id="links" class="closed">
+                <img id="close-btn" src="./src/images/close.svg" />
+                <li><a href="#section-2">حول إتقان</a></li>
+                <li><a href="#section-3">مشاريعنا</a></li>
+                <li><a href="#">خدماتنا</a></li>
+                <li><a href="#">شركاؤنا</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
         </div>
-        <ul id="links" class="closed">
-            <img id="close-btn" src="./src/images/close.svg" />
-            <li><a href="#section-2">حول إتقان</a></li>
-            <li><a href="#section-3">مشاريعنا</a></li>
-            <li><a href="#">خدماتنا</a></li>
-            <li><a href="#">شركاؤنا</a></li>
-            <li><a href="#">اتصل بنا</a></li>
-        </ul>
         <img src="./src/images/logo.png" alt="" class="logo">
     </header>
     <main class="">
@@ -210,40 +212,45 @@
         </section>
         <section class="footer section-4"
             style="color: gray; gap: 1rem; display: flex; align-items: start; justify-content: space-between; height: fit-content !important; padding: 2rem 0rem; position: relative; z-index: 1111111111111111111; margin: 0 10rem;">
-            <img src="./src/images/footer-logo.svg" alt="" class="logo">
-            <div style="width: 18rem;" class="second-sec">
-                <h2>حول إتقان</h2>
-                <p>إتقان العقارية شركة عالمية، مبتكرة في رسم خطط
-                    االستثمار، تمتاز بفريق عمل متكامل وملتزم بنجاح
-                    العمالاء، وتطوير أصول الشركة محليً وخارجيً من
-                    خلال مشاريعها العمالقة.
-                </p>
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 2rem;">
+                <img src="./src/images/footer-logo.svg" alt="" class="logo">
+                <div style="width: 18rem;" class="second-sec">
+                    <h2>حول إتقان</h2>
+                    <p>إتقان العقارية شركة عالمية، مبتكرة في رسم خطط
+                        االستثمار، تمتاز بفريق عمل متكامل وملتزم بنجاح
+                        العمالاء، وتطوير أصول الشركة محليً وخارجيً من
+                        خلال مشاريعها العمالقة.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h2>روابط مفيدة</h2>
-                <ul style="display: flex; flex-direction: column; gap: .5rem; font-size: .4rem; align-items: start;">
-                    <li><a style="font-size: .8rem; color: gray;" href="#">الصفحة الرئيسية</a></li>
-                    <li><a style="font-size: .8rem; color: gray;" href="#">مشاريعنا</a></li>
-                    <li><a style="font-size: .8rem; color: gray;" href="#">خدماتنا</a></li>
-                    <li><a style="font-size: .8rem; color: gray;" href="#">المركز الاجتماع</a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>تواصل معنا
-                </h2>
-                <span>الرياض، العقيق
-                    <br>طريق األمير محمد بن سعد
-                </span>
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 2rem;">
                 <div>
-                    <a href="mailto:info@etqaan.sa"></a>
-                    <div style="color: #4498b2; display: flex; align-items: center; gap: 4rem; margin-top: 1rem;">
-                        <span style="font-weight: bold;">920001019</span>
-                        <div style="display: flex; align-items: center; gap: 1rem;">
-                            <i class="fa-brands fa-x-twitter"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-tiktok"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-youtube"></i>
+                    <h2>روابط مفيدة</h2>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: .5rem; font-size: .4rem; align-items: start;">
+                        <li><a style="font-size: .8rem; color: gray;" href="#">الصفحة الرئيسية</a></li>
+                        <li><a style="font-size: .8rem; color: gray;" href="#">مشاريعنا</a></li>
+                        <li><a style="font-size: .8rem; color: gray;" href="#">خدماتنا</a></li>
+                        <li><a style="font-size: .8rem; color: gray;" href="#">المركز الاجتماع</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>تواصل معنا
+                    </h2>
+                    <span>الرياض، العقيق
+                        <br>طريق األمير محمد بن سعد
+                    </span>
+                    <div>
+                        <a href="mailto:info@etqaan.sa"></a>
+                        <div style="color: #4498b2; display: flex; align-items: center; gap: 4rem; margin-top: 1rem;">
+                            <span style="font-weight: bold;">920001019</span>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -4,10 +4,12 @@ header {
     width: 90%;
     left: 5%;
     display: flex;
-    justify-content: space-between;
     align-items: end;
+    justify-content: end;
+    gap: 4rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    margin: 0 5%;
 }
 
 #close-btn {

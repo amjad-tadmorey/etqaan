@@ -34,6 +34,7 @@ const observer = new IntersectionObserver((entries) => {
                 document.querySelectorAll('.card').forEach(card => card.classList.add('go-down'));
             } else if (sectionId === 'section-3') {
                 console.log('You have reached Section 3');
+                contact.classList.add('hide-contact');
             }
         } else {
             // Section exits the viewport
